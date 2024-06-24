@@ -11,14 +11,11 @@ public interface IBookService {
 
   // GET
   public List<BookDTO> getAllBooks();
-
   public BookDTO getBook(String isbn);
-
   public List<BookDTO> getAllBooksByAuthor(String authors);
 
   // DELETE
   boolean deleteBook(String isbn);
-
   boolean deleteAllBooks();
 
   // PUT
