@@ -1,5 +1,6 @@
 package com.library.books.controller;
 
+import com.library.books.repository.entity.Book;
 import com.library.books.service.IBookService;
 import com.library.books.service.dto.BookDTO;
 import java.net.URI;
@@ -34,7 +35,6 @@ public class BookController {
     return iBookService.getAllBooks();
   }
 
-
   @PostMapping
   public ResponseEntity<BookDTO> addBook(@RequestBody Book book,
       UriComponentsBuilder uriComponentsBuilder) {
@@ -65,7 +65,6 @@ public class BookController {
         .status(HttpStatus.METHOD_NOT_ALLOWED)
         .build();
   }
-
 
   @GetMapping(path = "/book", params = "author")
   // "params" value must match (@RequestParam identifier)

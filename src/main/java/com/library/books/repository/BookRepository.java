@@ -5,7 +5,9 @@ import jakarta.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 // This is where I inform JPA of my type/table. JPA can look up my Book entity and work from there.
 // The implementation of this interface is done by the JPA (in the background)!
