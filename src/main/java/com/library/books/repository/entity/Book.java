@@ -28,16 +28,12 @@ public class Book {
   // @Column required if the member != the db column name i.e. book_title != bookTitle
   @Column(name = "book_title") // jakarta
   private String bookTitle;
-
   private String authors;
-
   private String publisher;
-
   private String isbn;
 
   @Column(name = "year_published")
   private int yearPublished;
-
   private int price;
 
 }
